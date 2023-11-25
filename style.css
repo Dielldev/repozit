@@ -537,3 +537,24 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 body.dark .logo img {
   filter: brightness(100%);
 }
+
+
+/*Aboutttttttt */
+
+#about{
+    height: 573px;
+    background: linear-gradient(rgb(0,0,0,0.50),rgb(0,0,0,0.50)), url(images/vrbg.jpg);
+    background-position: center;
+    background-repeat: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#about h1{
+    color: #fff;
+    
+}
+#about p{
+    color: #fff;
+}
