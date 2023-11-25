@@ -1,8 +1,4 @@
 
-
-/* Please ❤ this if you like it! */
-
-
 (function($) { "use strict";
 
 	$(function() {
