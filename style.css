@@ -559,7 +559,70 @@ body.dark .logo img {
    
     
 }
+/* buy now */
 
+.button{
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    background-color: rgb(249, 248, 248);
+    align-items: center;
+}
+.button i{
+    margin-left: -190px;
+}
+.button h3{
+	position: relative;
+	top: 5px;
+}
+button {
+    padding: 0.8em 1.8em;
+    border: 2px solid rgb(134, 134, 255);
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: rgb(134, 134, 255)2;
+    height: 60px;
+    width: 190px;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: rgb(134, 134, 255);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: #111;
+   }
+
+   button a{
+    color: #111;
+    text-decoration: none;
+   }
+
+   .button a:hover{
+    color: #111;
+	text-decoration: none;
+   }
 
 #about{
     height: 573px;
