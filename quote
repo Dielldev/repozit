@@ -1,0 +1,31 @@
+  <section id="quote">
+        <div class="text-wrapper">
+            <h2>Experience Our Newest Vr set</h2>
+            <h1>Shop Online</h1>
+        </div>
+    </section>
+
+css
+
+
+#quote{
+    padding: 150px 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(vrbg.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+#quote .text-wrapper h2{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+#quote .text-wrapper h1{
+    color: white;
+    font-family: var(--font-family-2);
+    font-size: 60px;
+}
