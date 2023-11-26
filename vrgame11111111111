@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <title>Faqja VR e Përshtatur</title>
+</head>
+<body>
+    
+
+    <?php
+   
+   $mesazhi="This is how VR games work!";
+   $mesazhi2="A game made by us";
+?>
+
+
+<a-scene keyboard-shortcuts>
+    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-cylinder position="1 0.75 -1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-box position="-1 1 -14" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-sphere position="0 1.50 -10" radius="1.25" color="#EF2D5E"></a-sphere>
+    <a-cylinder position="1 1.75 -9" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-cylinder position="1 0.50 -8" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
+    <a-box position="-1 1 -19" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-sphere position="2 1.50 -20" radius="1.25" color="#EF2D5E"></a-sphere>
+    <a-cylinder position="3 1.75 -21" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-cylinder position="4 0.50 -22" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-plane position="5 0 -26" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
+    <a-box position="2 1 -24" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-sphere position="6 1.50 -18" radius="1.25" color="#EF2D5E"></a-sphere>
+    <a-cylinder position="7 1.75 -29" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-cylinder position="9 0.50 -30" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-plane position="15 0 1" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
+    <a-sky color="#ECECEC"></a-sky>
+    <a-text value="<?php echo $mesazhi; ?>" align="center" position="0 2 -3" color="#333"></a-text>
+    <a-text value="<?php echo $mesazhi2; ?>" align="center" position="0 2 -1" color="#333"></a-text>
+</a-scene>
+
+
+    <script>
+       var dynamicText = document.getElementById('dynamicText');
+    dynamicText.setAttribute('value', '<?php echo $cleanMessage; ?>');
+    </script>
+</body>
+</html>
